@@ -1,5 +1,5 @@
-import FadeContent from "../component/FadeContent";
-import Crevtivox from "./icons/Crevtivox";
+import FadeContent from "../../animations/FadeContent";
+import Crevtivox from "../icons/Crevtivox";
 
 
 const Navbar = () => {
