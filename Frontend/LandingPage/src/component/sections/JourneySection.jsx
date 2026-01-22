@@ -15,7 +15,7 @@ const JourneySection = ({title,date,heading,descriptionP1,descriptionP2,mainImag
                         <div className="w-full h-9 mb-[6.144px] text-[1.2vw] font-semibold">
                             <p>{date}</p>
                         </div>
-                        <div className="w-full h-[58.98px] mb-[55.296px] text-[1.92vw]">
+                        <div className="w-full mb-[55.296px] text-[1.92vw]">
                             <h3>{heading}</h3>
                         </div>
                         <div className="h-auto w-full text-[.79vw] font-semibold">
