@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <>
         <FadeContent blur={false} duration={2000} easing="ease-out" initialOpacity={0}>
-            <nav className="w-full h-24.5 flex justify-center items-center">
+            <nav className="w-full h-24.5 flex justify-center items-center max-w-640 mx-auto">
                 <div className="w-[95%] h-ful flex justify-between items-center text-xl">
                     <div className="flex gap-6 ">
                         <a href="" className="border-b" >ABOUT</a>

@@ -12,13 +12,13 @@ const JourneySection = ({title,date,heading,descriptionP1,descriptionP2,mainImag
                         <img className='w-full h-[797.91px] object-cover' src={mainImage} alt="" />
                     </div>
                     <div className="w-[602.89px] px-18.25">
-                        <div className="w-full h-9 mb-[6.144px] text-[1.2vw] font-semibold">
+                        <div className="w-full h-9 mb-[6.144px] text-[31px] font-semibold">
                             <p>{date}</p>
                         </div>
-                        <div className="w-full mb-[55.296px] text-[1.92vw]">
+                        <div className="w-full mb-[55.296px] text-[49px]">
                             <h3>{heading}</h3>
                         </div>
-                        <div className="h-auto w-full text-[.79vw] font-semibold">
+                        <div className="h-auto w-full text-[20px] font-semibold">
                             <span>
                                 {descriptionP1}
                                 <br/>
