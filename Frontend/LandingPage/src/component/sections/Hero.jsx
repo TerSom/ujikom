@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import ScrollStack, { ScrollStackItem } from '../../animations/ScrollStack';
 import '@fontsource/lora';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitText from '../../animations/SplitText';
 import JourneySection from './JourneySection';
 import JourneyCard from './JourneyCard';
+import CultureSection from './CultureSection';
+import NetworkSection from './NetworkSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,47 +89,11 @@ const Hero = () => {
         <JourneySection title={"The cunning pack"} date={"4th September 2023"} heading={"4 years strong"} descriptionP1={"This year has been a chapter full of beautiful milestones, where Cretivox has blossomed into a company that’s not only more refined but also more professional. We’ve grown in ways that go beyond numbers and achievements—we’ve matured in spirit, vision, and responsibility. This year, we also marked the conclusion of the Cretivox Internship Experience, closing with Batch X (Finale). Through this journey, we didn’t just teach; we learned how powerful collaboration can be. We discovered that when people come together, united by a shared goal, they can create something truly meaningful."} descriptionP2={"As we enter our fourth year, we embrace the responsibility to be more resilient, unified, and stronger—much like a pack of wolves hunting together with precision and purpose. Four years strong, we stand ready to face the challenges ahead, guided by the wisdom of our experiences and a collective vision for the future."} mainImage={"https://cretivox.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fcretivox%2FKE4_-_IMAGE_RudFLvzz9.png&w=1080&q=75"} sideImage={"https://cretivox.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fcretivox%2FKE4_-_LOGO_w8J6pOkIz.png&w=1080&q=75"} />
         <JourneySection title={"Doing good, giving good"} date={"4th September 2024"} heading={"On the right 5"} descriptionP1={"In our fifth year, we’ve made a significant impact with the Cretivox Internship Experience, now in its second season after nine batches. We've also established the Cretivox Creative Community to nurture and connect young Indonesians."} descriptionP2={"Like a colony of bees, we work together intelligently and passionately, transforming challenges into opportunities. Our mission is to create meaningful change through collaboration and innovation. We believe that even small actions can create lasting waves of change, inspiring others along the way."} mainImage={"https://cretivox.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fcretivox%2FKE5_-_IMAGE_9kXh6YiEf.png&w=1080&q=75"} sideImage={"https://cretivox.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fcretivox%2FKE5_-_LOGO_dXafbAgxx.png&w=1080&q=75"} />
       </div>
-      <div className="w-full h-320 flex justify-center">
-        <div className="w-[95%] h-auto">
-          <div className="mb-[92.16px] pt-[110.16px] text-[92px]">
-            <h2>The DNA inside</h2>
-            <p>all of us</p>
-          </div>
-          <div className="flex">
-            <div className=" h-auto w-[20%] text-2xl">
-              <ul>
-                <li>Culture</li>
-                <li>Internship</li>
-                <li>Cultivating</li>
-                <li>Telapak</li>
-              </ul>
-            </div>
-            <div className="mt-[-200px] h-[1000.59px] w-[1580.05px]">
-              <ScrollStack>
-                <ScrollStackItem>
-              <div className="">
-                <img src="https://cretivox.com/_next/image?url=%2Fculture%2FCulture_1.png&w=1920&q=75" alt="" />
-              </div>
-                </ScrollStackItem>
-                <ScrollStackItem>
-              <div className="">
-                <img src="https://cretivox.com/_next/image?url=%2Fculture%2FCulture_2.png&w=1920&q=75" alt="" />
-              </div>
-                </ScrollStackItem>
-                <ScrollStackItem>
-              <div className="">
-                <img src="https://cretivox.com/_next/image?url=%2Fculture%2FCulture_3.png&w=1920&q=75" alt="" />
-              </div>
-                </ScrollStackItem>
-                <ScrollStackItem>
-              <div className="">
-                <img src="https://cretivox.com/_next/image?url=%2Fculture%2FCulture_4.png&w=1920&q=75" alt="" />
-              </div>
-                </ScrollStackItem>
-              </ScrollStack>
-            </div>
-          </div>
-        </div>
+      <div className="">
+        <CultureSection />
+      </div>
+      <div className="">
+        <NetworkSection />
       </div>
     </div>
     </section>

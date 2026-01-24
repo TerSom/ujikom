@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/arimo": "^5.2.8",
     "@fontsource/lora": "^5.2.8",
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.18",
+    "boxicons": "^2.1.4",
     "gsap": "^3.14.2",
     "lenis": "^1.3.17",
     "react": "^19.2.0",

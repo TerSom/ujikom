@@ -1,6 +1,6 @@
 const JourneySection = ({title,date,heading,descriptionP1,descriptionP2,mainImage,sideImage}) => {
     return (
-        <div className="w-640 h-293.5 shrink-0 flex items-center justify-center">
+        <section className="w-640 h-293.5 shrink-0 flex items-center justify-center">
             <div className="w-[95%] h-[90%]">
                 <div className=" w-full h-22.5 flex">
                      <div className="w-[50%]">
@@ -32,7 +32,7 @@ const JourneySection = ({title,date,heading,descriptionP1,descriptionP2,mainImag
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

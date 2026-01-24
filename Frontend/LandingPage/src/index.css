@@ -1,7 +1,10 @@
 @import "tailwindcss";
-
 @import "tailwindcss";
 
 @theme {
   --font-lora: 'Lora', serif;
+}
+
+@theme {
+  --font-sans: 'Arimo', system-ui, sans-serif;
 }

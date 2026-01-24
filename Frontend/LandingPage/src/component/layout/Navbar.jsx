@@ -1,5 +1,5 @@
 import FadeContent from "../../animations/FadeContent";
-import Crevtivox from "../icons/Crevtivox";
+import {CrevtivoxHeader} from "../icons/Crevtivox";
 
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
                         <a href="" className="border-b" >PLATFROM</a>
                     </div>
                     <div className="">
-                        <Crevtivox />
+                        <CrevtivoxHeader />
                     </div>
                     <div className="flex gap-6">
                         <a href="" className="border-b" >NEWS</a>
