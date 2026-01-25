@@ -5,7 +5,7 @@ const NetworkSection = () => {
     return (
         <>
         <section>
-            <div className="w-full h-320 flex justify-center font-sans mt-30">
+            <div className="w-full h-310 flex justify-center font-sans mt-30">
                 <div className="w-[95%] h-auto">
                     <div className="h-49 flex flex-col justify-center text-center text-8xl">
                         <div className="">

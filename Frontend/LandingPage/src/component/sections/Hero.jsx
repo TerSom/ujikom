@@ -7,6 +7,7 @@ import JourneySection from './JourneySection';
 import JourneyCard from './JourneyCard';
 import CultureSection from './CultureSection';
 import NetworkSection from './NetworkSection';
+import DepartmentsSection from './DepartmentsSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,6 +95,9 @@ const Hero = () => {
       </div>
       <div className="">
         <NetworkSection />
+      </div>
+      <div className="">
+        <DepartmentsSection />
       </div>
     </div>
     </section>

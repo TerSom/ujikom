@@ -3,8 +3,14 @@ import departmentsRouter from "./routers/departmentRoutes.js";
 import employeeRouter from "./routers/employeeRoutes.js";
 import router from "./routers/indexRouter.js";
 import morgan from "morgan";
+import cors from "cors"
 
 const app = express();
+
+app.use(cors({
+  origin: "http://localhost:5173"
+}))
+
 app.use(express.json());
 app.use(morgan("dev"));
 
