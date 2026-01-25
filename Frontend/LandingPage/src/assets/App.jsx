@@ -1,6 +1,6 @@
 import Footer from '../component/layout/Footer'
 import Navbar from '../component/layout/Navbar'
-import Hero from '../component/sections/Hero'
+import Hero from '../component/layout/Hero'
 
 function App() {
 

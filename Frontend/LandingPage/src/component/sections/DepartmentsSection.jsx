@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "@fontsource/arimo";
 import "boxicons/css/boxicons.min.css";
+import adamVideo from '../../component/icons/adam.mp4';
 
 const DepartmentsSection = () => {
   const [departments, setDepartments] = useState([]);
@@ -59,14 +60,24 @@ const DepartmentsSection = () => {
                           </div>
                             {showContent.employees && showContent.employees.length > 0 ? (showContent.employees.map((emp) => (
                             <div key={emp.id} className="border-b pb-6">
-                              <div className="flex h-50 text-6xl items-center p-10">
-                                <h4 className="w-[50%]">{emp.name}</h4>
+                              <div className="flex h-50 text-6xl items-center p-10 relative">
                                 <p className="w-[50%]">{emp.role}</p>
+                                <div className="w-[50%] relative group">
+                                  <h4 className="">{emp.name}</h4>
+                                  <video
+                                    src={emp.video_src}
+                                    className=" absolute mt-[-16%] ml-[-40%] w-100 h-90 object-cover opacity-0 scale-100 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 rounded-xl shadow-xl
+                                    "
+                                    autoPlay
+                                    muted
+                                    loop
+                                  />
+                                </div>
                               </div>
                             </div>
                             ))
                           ) : (
-                            <p className="text-xl opacity-50">
+                            <p className="text-6xl flex justify-center h-250 items-center">
                               No employees in this department.
                             </p>
                           )}

@@ -3,11 +3,11 @@ import '@fontsource/lora';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitText from '../../animations/SplitText';
-import JourneySection from './JourneySection';
-import JourneyCard from './JourneyCard';
-import CultureSection from './CultureSection';
-import NetworkSection from './NetworkSection';
-import DepartmentsSection from './DepartmentsSection';
+import JourneySection from '../sections/JourneySection';
+import JourneyCard from '../sections/JourneyCard';
+import CultureSection from '../sections/CultureSection';
+import NetworkSection from '../sections/NetworkSection';
+import DepartmentsSection from '../sections/DepartmentsSection';
 
 gsap.registerPlugin(ScrollTrigger);
 

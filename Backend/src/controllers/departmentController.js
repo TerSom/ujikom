@@ -45,7 +45,8 @@ export const getDepartmentsWithEmployees = async (req, res) => {
         d.description,
         e.id AS employee_id,
         e.name AS employee_name,
-        e.role
+        e.role,
+        e.video_src
       FROM departments d
       LEFT JOIN employees e
         ON d.id = e.department_id
@@ -68,6 +69,7 @@ export const getDepartmentsWithEmployees = async (req, res) => {
           id: row.employee_id,
           name: row.employee_name,
           role: row.role,
+          video_src : row.video_src
         });
       }
     }
