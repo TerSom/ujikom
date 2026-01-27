@@ -8,6 +8,7 @@ import JourneyCard from '../sections/JourneyCard';
 import CultureSection from '../sections/CultureSection';
 import NetworkSection from '../sections/NetworkSection';
 import DepartmentsSection from '../sections/DepartmentsSection';
+import LeadershipSection from '../sections/LeadershipSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,7 +20,7 @@ const Hero = () => {
     const section = sectionRef.current;
     const container = containerRef.current;
     
-    const viewportWidth = Math.min(window.innerWidth, 2560);
+    const viewportWidth = Math.min(window.innerWidth);
     const totalWidth = container.scrollWidth - viewportWidth;
 
     gsap.to(container, {
@@ -50,19 +51,19 @@ const Hero = () => {
   return (
     <section ref={sectionRef} className="w-full overflow-hidden flex justify-center font-lora items-center ">
       <div className="flex flex-col h-auto w-full max-w-640 mx-auto">
-      <div ref={containerRef} className="flex mt-24.5">
-        <div className="w-640 h-293.5 shrink-0 flex items-center justify-center">
-            <div className="w-[95%] h-[90%] ">
+      <div ref={containerRef} className="flex mt-12 2xl:mt-24.5">
+        <div className="2xl:w-640 w-351.5 h-130 2xl:h-293.5 shrink-0 flex items-center justify-center">
+            <div className="w-[95%] h-[90%]">
                 <div className=" w-full h-22.5 flex">
                     <div className="w-[50%]">
                         <SplitText 
                             text="The story so far."
                             tag="h1"
-                            className="text-8xl font-semibold"
+                            className="text-5xl 2xl:text-8xl font-semibold"
                         />
                         
                     </div>
-                    <div className="w-[50%] text-xl font-medium">
+                    <div className="w-[50%] text-sm 2xl:text-xl font-medium">
                         <SplitText 
                         text="With a mix of wild tales and unforgettable moments, every story spices up our"
                         tag='p'/>
@@ -76,7 +77,7 @@ const Hero = () => {
                         tag='p'/>
                     </div>
                 </div>
-                <div className=" mt-10 h-auto flex">
+                <div className=" 2xl:mt-10 h-auto flex">
                     <JourneyCard delayImage={1.3} delayText={2.4} mainImage={"https://cretivox.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fcretivox%2FC_Level_depan_FM__1__1xuSz8bB-.jpg&w=1080&q=75"} title={"Cornerstone"} date={"2019-2020"} description={'"From a humble studio, we carved our mark in Indonesia’s digital media landscape, fueled by hope and ambition."'} />
                     <JourneyCard delayImage={1.6} delayText={2.5} mainImage={"https://cretivox.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fcretivox%2FCondfe_Ogs_sF1pktnjY.png&w=1080&q=75"} title={"Effective"} date={"2023"} description={'Our strategy worked, optimizing along the way. We stayed relevant and achieved milestones that defined our success this year.'} />
                     <JourneyCard delayImage={1.9} delayText={2.6} mainImage={"https://cretivox.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fcretivox%2FGrowth_2q-aUv5Wb.jpg&w=1080&q=75"} title={"Growth"} date={"2021-2022"} description={'We experienced remarkable growth, building on that foundation while relentlessly pushing to sustain our momentum.'} />
@@ -95,6 +96,9 @@ const Hero = () => {
       </div>
       <div className="">
         <NetworkSection />
+      </div>
+      <div className="">
+        <LeadershipSection />
       </div>
       <div className="">
         <DepartmentsSection />

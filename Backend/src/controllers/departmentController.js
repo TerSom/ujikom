@@ -13,7 +13,6 @@ export const createDepartment = async (req, res) => {
     const [rows] = await db.query('INSERT INTO departments (name, description) VALUES (?, ?)', [name, description]);
     res.status(201).json({
         message: "Department created successfully",
-        departements : rows.insertId,
     })
 }
 
@@ -24,7 +23,6 @@ export const updateDepartment = async (req, res) => {
     const [rows] = await db.query('UPDATE departments SET name = ?, description = ? WHERE id = ?', [name, description, id]);
     res.status(200).json({
         message: "Department updated successfully",
-        departements: rows.insertId,
     })
 }
 

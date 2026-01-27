@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "@fontsource/arimo";
 import "boxicons/css/boxicons.min.css";
-import adamVideo from '../../component/icons/adam.mp4';
 
 const DepartmentsSection = () => {
   const [departments, setDepartments] = useState([]);
@@ -37,7 +36,7 @@ const DepartmentsSection = () => {
               <div className="">
                 {showContent && (
                   <div className="fixed inset-0 flex justify-center">
-                    <div className="bg-black  mt-1000 w-[95%] max-w-640 sticky">
+                    <div className="bg-black mt-1560 w-[95%] max-w-640 sticky">
                       <div className="flex justify-end text-white  text-4xl p-10">
                         <button
                           className="cursor-pointer"
@@ -64,13 +63,10 @@ const DepartmentsSection = () => {
                                 <p className="w-[50%]">{emp.role}</p>
                                 <div className="w-[50%] relative group">
                                   <h4 className="">{emp.name}</h4>
-                                  <video
+                                  <img
                                     src={emp.video_src}
                                     className=" absolute mt-[-16%] ml-[-40%] w-100 h-90 object-cover opacity-0 scale-100 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 rounded-xl shadow-xl
                                     "
-                                    autoPlay
-                                    muted
-                                    loop
                                   />
                                 </div>
                               </div>
