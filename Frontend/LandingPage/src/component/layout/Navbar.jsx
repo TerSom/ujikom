@@ -1,5 +1,5 @@
 import FadeContent from "../../animations/FadeContent";
-import {CrevtivoxHeader} from "../icons/Crevtivox"; 
+import logoCreative from "../icons/DarmanBlack.png"
 
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
                         <a href="" className="border-b" >PLATFROM</a>
                     </div>
                     <div className="w-full flex justify-between md:w-auto">
-                        <CrevtivoxHeader />
+                        <img src={logoCreative} alt="Logo Creative" className="h-12"/>
                         <div className="md:hidden flex justify-center items-center text-2xl">
                             <i className='bx bx-menu'></i>
                         </div>
