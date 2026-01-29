@@ -24,7 +24,7 @@ const Hero = () => {
     const section = sectionRef.current;
     const container = containerRef.current;
 
-    const viewportWidth = Math.min(window.innerWidth);
+    const viewportWidth = Math.min(window.innerWidth, 2560);
     const totalWidth = container.scrollWidth - viewportWidth;
 
     gsap.to(container, {
@@ -128,6 +128,24 @@ const Hero = () => {
             </div>
           </div>
           <JourneySection
+            title={"Awal Perjalanan"}
+            date={"2023"}
+            heading={"Starting small"}
+            descriptionP1={
+              "Darman Creative memulai perjalanan sebagai studio kecil dengan fokus pada eksplorasi ide dan identitas visual."
+            }
+            descriptionP2={
+              "Kami membangun fondasi kerja yang rapi dan fleksibel untuk menghadapi berbagai tantangan awal."
+            }
+            mainImage={
+              "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&q=70"
+            }
+            sideImage={
+              "https://images.unsplash.com/photo-1556761175-129418cb2dfe?w=600&q=70"
+            }
+          />
+
+          <JourneySection
             title={"Bertumbuh"}
             date={"2024"}
             heading={"Building momentum"}
@@ -142,6 +160,24 @@ const Hero = () => {
             }
             sideImage={
               "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=70"
+            }
+          />
+
+          <JourneySection
+            title={"Pengembangan"}
+            date={"2025"}
+            heading={"Sharpening direction"}
+            descriptionP1={
+              "Kami mulai memperjelas arah brand dan pendekatan kreatif yang ingin kami bangun."
+            }
+            descriptionP2={
+              "Proses kerja menjadi lebih terstruktur tanpa menghilangkan ruang eksplorasi."
+            }
+            mainImage={
+              "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&q=70"
+            }
+            sideImage={
+              "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=70"
             }
           />
 
@@ -164,7 +200,7 @@ const Hero = () => {
           />
 
           <JourneySection
-            title={"Present"}
+            title={"Saat Ini"}
             date={"2026"}
             heading={"Moving forward"}
             descriptionP1={
