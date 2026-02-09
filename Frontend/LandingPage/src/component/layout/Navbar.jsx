@@ -1,5 +1,6 @@
 import FadeContent from "../../animations/FadeContent";
 import logoCreative from "../icons/DarmanBlack.png"
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
                     <div className="md:flex gap-6 hidden ">
                         <a href="" className="border-b" >ABOUT</a>
                         <a href="" className="border-b" >WORK</a>
-                        <a href="" className="border-b" >PLATFROM</a>
+                        <Link to="/employee" className="border-b">EMPLOYEE</Link>
                     </div>
                     <div className="w-full flex justify-between md:w-auto">
                         <img src={logoCreative} alt="Logo Creative" className="h-12"/>

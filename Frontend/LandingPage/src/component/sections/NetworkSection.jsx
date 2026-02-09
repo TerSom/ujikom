@@ -64,30 +64,6 @@ const NetworkSection = () => {
             </div>
           </div>
         </div>
-
-        <div className="w-full h-282 flex justify-center font-sans mt-30">
-          <div className="h-auto w-[34%] flex justify-center items-center">
-            <img
-              width={720}
-              height={520}
-              src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=75"
-              alt="Jaringan kerja"
-            />
-          </div>
-
-          <div className="h-auto w-[34%] flex justify-center items-center text-black text-8xl font-bold font-serif">
-            <h1>OUR NETWORK</h1>
-          </div>
-
-          <div className="h-auto w-[34%] flex justify-center items-center">
-            <img
-              width={720}
-              height={520}
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=75"
-              alt="Koneksi tim"
-            />
-          </div>
-        </div>
       </section>
     </>
   );

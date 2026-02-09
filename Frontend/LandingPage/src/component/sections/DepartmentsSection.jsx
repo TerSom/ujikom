@@ -36,7 +36,7 @@ const DepartmentsSection = () => {
               <div className="">
                 {showContent && (
                   <div className="fixed inset-0 flex justify-center">
-                    <div className="bg-black mt-1560 w-[95%] max-w-640 sticky">
+                    <div className="bg-black mt-1280 w-[95%] max-w-640 sticky">
                       <div className="flex justify-end text-white  text-4xl p-10">
                         <button
                           className="cursor-pointer"
