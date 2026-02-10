@@ -1,9 +1,7 @@
 import { useEffect, useContext, useState } from "react";
-import { AppContext } from "../AppContext";
 import { Link } from "react-router-dom";
 
-export default function Employee() {
-  const { setActiveModule } = useContext(AppContext);
+function Employee() {
   const [employees, setEmployees] = useState([]);
   const [departments, setDepartments] = useState([]);
   const [formData, setFormData] = useState({
@@ -18,12 +16,12 @@ export default function Employee() {
   const API_BASE = "http://localhost:3000/api";
 
   useEffect(() => {
-    setActiveModule("Employee");
     fetchEmployees();
     fetchDepartments();
   }, []);
 
   const fetchEmployees = async () => {
+    // buat ada loadingnya
     const res = await fetch(`${API_BASE}/employees`);
     const data = await res.json();
     setEmployees(data.employees || []);
@@ -165,7 +163,9 @@ export default function Employee() {
         <h2 className="text-xl font-bold mb-4">Daftar Karyawan ({employees.length})</h2>
 
         {employees.length === 0 ? (
-          <p className="text-gray-500 text-center py-8">Belum ada data</p>
+           <div className="flex justify-center items-center">
+              <div className="animate-spin rounded-full h-12 w-12 border-4 border-gray-200 border-t-blue-500"></div>
+           </div>
         ) : (
           <table className="w-full text-sm">
             <thead className="bg-gray-100">
@@ -212,3 +212,5 @@ export default function Employee() {
     </div>
   );
 }
+
+export default Employee

@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className="w-[95%] h-ful flex justify-between items-center text-sm 2xl:text-xl">
                     <div className="md:flex gap-6 hidden ">
                         <a href="" className="border-b" >ABOUT</a>
-                        <a href="" className="border-b" >WORK</a>
+                        <Link to="/departments" className="border-b">DEPARTMENTS</Link>
                         <Link to="/employee" className="border-b">EMPLOYEE</Link>
                     </div>
                     <div className="w-full flex justify-between md:w-auto">

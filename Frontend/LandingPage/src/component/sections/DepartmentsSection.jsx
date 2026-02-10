@@ -5,9 +5,10 @@ import "boxicons/css/boxicons.min.css";
 const DepartmentsSection = () => {
   const [departments, setDepartments] = useState([]);
   const [showContent, setShowContent] = useState(null);
+  const API_BASE = "http://localhost:3000/api/departments/with-employees"
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/departments/with-employees")
+    fetch(API_BASE)
       .then((res) => res.json())
       .then((data) => setDepartments(data))
       .catch((err) => console.log(err));
